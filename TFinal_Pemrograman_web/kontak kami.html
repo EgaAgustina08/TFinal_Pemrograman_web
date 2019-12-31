@@ -1,0 +1,158 @@
+<html>
+<head>
+    <title>Kontak</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <style type="text/css">
+    .pertengahan{
+        margin-top: 10px;
+        margin-left: 400px;
+
+    }
+    .nama{
+        font-family: Century;
+        font-size: 13pt;
+        width: 415px;
+        height: 35px;
+        border: 1px solid #000000;
+        padding-left: 5px;
+        margin-top: 10px;
+        margin-left: 15px;
+        display: compact;
+        box-shadow: #000000;
+        border-radius: 5px;
+    }
+
+    .email{
+        font-family: Century;
+        font-size: 13pt;
+        width: 415px;
+        height: 35px;
+        border: 1px solid #000000;
+        padding-left: 5px;
+        margin-top: 10px;
+        margin-left: 15px;
+        display: compact;
+        box-shadow: #000000;
+        border-radius: 5px;
+    }    
+    .Komentar{
+        font-family: Century;
+        font-size: 13pt;
+        border: 1px solid #000000;
+        margin-left: 15px;
+        margin-top: 10px;
+        padding-left: 5px;
+        display: compact;
+        box-shadow: #000000;
+        border-radius: 5px;
+        width:415px;
+    }
+    .Proses:hover{
+        background-color: #C0C0C0;
+        color: #000000;
+    }
+    .Proses{
+        position:relative;
+        box-sizing:border-box;
+        display:block;
+        width:100px;
+        border: 0px none;
+        padding: 0px 15px;
+        text-align:center;
+        font-family:Century;
+        font-weight:400;
+        text-shadow: 0px 0px 0px transparent;
+        border-radius: 4px;
+        color:#ffffff;
+        background:#000000 none repeat scroll 0% 0%;
+        height: 30px;
+        line-height: 29px;
+        font-size: 16px;
+        margin:auto;
+        margin-top:10px;
+    }
+
+</style>
+<div class="wrap">
+
+    <nav class="menu">
+        <ul>
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+                <li>
+                    <a href="alat kecantikan.html">Alat Kecantikan</a>
+                </li>
+                <li>
+                    <a href="kosmetik.html">Kosmetik</a>
+                </li>
+                <li>
+                    <a href="perawatan wanita.html">Perawatan Wanita</a>
+                </li>
+                <li>
+                    <a href="aksesoris.html">Accessories</a>
+                </li>
+                <li>
+                    <a href="parfum.html">Parfum</a>
+                </li>
+                <li>
+                    <a href="kontak kami.html">Kontak Kami</a>
+                </li>
+            </ul>
+    </nav></div>
+    <h1 align="center" ><font face="comic sans MS" ></h1>
+
+        <center><br><br><img src="img/hubungi-kami.png"  style="width: 500px;"> </center>
+        <h2 align="center" class="title"> Caranya!! <br> <p style="font-size: 11px; margin-top: 0px;"> Silahkan Isikan Nama, Alamat dan Komentar Anda </p> </h2>
+        
+        <div class="pertengahan">
+
+
+            <table>                
+                <tr>
+                    <td>Nama Lengkap</td>
+                    <td><input class="nama" type="text" name="namadepan" id="nama" placeholder="Nama"></td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td><input class="email" type="text" name="email" id="email" placeholder="Alamat"></td>
+                </tr>
+
+                <tr>
+
+                    <td>Komentar</td>
+                    <td>
+                        <textarea class="Komentar" type="textarea" name="Isi Komentar" id="komentar" placeholder="Isi Komentar" cols="37" rows="5"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="Proses" id="proses" type="Proses" value="Proses">Kirim</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+        <p align="center" class="hasil" id="hasil_nama"> </p>
+        <p align="center" class="hasil" id="hasil_email"> </p>
+        <p align="center" class="hasil" id="hasil_komentar"> </p>
+
+
+        
+        <script type="text/javascript">
+            document.getElementById("proses").addEventListener("click", function()
+            {
+                var nama=document.getElementById("nama").value;
+                var email=document.getElementById("email").value;
+                var komen=document.getElementById("komentar").value;
+                document.getElementById("hasil_nama").innerHTML="Nama saya  :"+nama;
+                document.getElementById("hasil_email").innerHTML="Email saya  :"+email;
+                document.getElementById("hasil_komentar").innerHTML="Komentar :"+komen;
+            });
+        </script>
+
+    </body>
+    </html>
